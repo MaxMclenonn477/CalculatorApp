@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">CalculatorApp</string>
+    <string name="app_name">MicCalculator</string>
     <string name="a_answer">Answer appears here</string>
 </resources>

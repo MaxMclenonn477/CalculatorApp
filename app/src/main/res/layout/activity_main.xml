@@ -6,38 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.835" />
-
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/intOne"
         android:layout_width="155dp"
         android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="584dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="588dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="type number here"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/intTwo"
         android:layout_width="178dp"
         android:layout_height="65dp"
         android:layout_marginStart="216dp"
         android:layout_marginBottom="588dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="number"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -48,7 +39,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="292dp"
         android:text="+"
-        android:textSize="40dp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -59,7 +50,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="96dp"
         android:text="/"
-        android:textSize="40dp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -70,7 +61,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="160dp"
         android:text="x"
-        android:textSize="40dp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -81,7 +72,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="224dp"
         android:text="-"
-        android:textSize="40dp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
