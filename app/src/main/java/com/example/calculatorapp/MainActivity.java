@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     public void switchScreens(View veiw){
         //make a reference to the EditText in the xml for the page
         EditText editText = findViewById(R.id.intOne);
@@ -30,4 +31,7 @@ public class MainActivity extends AppCompatActivity {
         //
         startActivity(intent);
     }
+
+
+
 }
