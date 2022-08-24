@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/intOne"
+        android:id="@+id/numOne"
         android:layout_width="155dp"
         android:layout_height="68dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="332dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="532dp"
         android:ems="10"
         android:hint="type number here"
         android:inputType="textPersonName"
@@ -20,13 +20,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/intTwo"
+        android:id="@+id/numTwo"
         android:layout_width="178dp"
         android:layout_height="65dp"
         android:layout_marginStart="208dp"
-        android:layout_marginBottom="332dp"
+        android:layout_marginBottom="532dp"
         android:ems="10"
-        android:hint="number"
+        android:hint="type number here"
         android:inputType="textPersonName"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,10 +36,11 @@
         android:id="@+id/button"
         android:layout_width="74dp"
         android:layout_height="87dp"
-        android:layout_marginEnd="320dp"
-        android:layout_marginBottom="132dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="420dp"
         android:text="+"
         android:textSize="40sp"
+        android:onClick="findSum"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -47,8 +48,8 @@
         android:id="@+id/button2"
         android:layout_width="77dp"
         android:layout_height="85dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="132dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="424dp"
         android:text="/"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,10 +57,10 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="77dp"
-        android:layout_height="83dp"
-        android:layout_marginEnd="124dp"
-        android:layout_marginBottom="132dp"
+        android:layout_width="76dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="424dp"
         android:text="x"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,13 +68,23 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="75dp"
-        android:layout_height="85dp"
-        android:layout_marginEnd="232dp"
-        android:layout_marginBottom="132dp"
+        android:layout_width="72dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="424dp"
         android:text="-"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="131dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="308dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

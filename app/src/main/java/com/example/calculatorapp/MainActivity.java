@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void switchScreens(View veiw){
         //make a reference to the EditText in the xml for the page
-        EditText editText = findViewById(R.id.intOne);
+        EditText editText = findViewById(R.id.numOne);
         // extract the String text from this editText
         String name = editText.getText().toString();
 
@@ -32,6 +33,27 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void findSum(View view){
+        EditText numberOne = findViewById(R.id.numOne);
+        EditText numberTwo = findViewById(R.id.numTwo);
+        TextView numberSum = findViewById(R.id.result);
 
+        int num1 = Integer.parseInt(numberOne.getText().toString());
+        int num2 = Integer.parseInt(numberTwo.getText().toString());
+        int sum = num1 + num2;
+
+        numberSum.setText("" + sum);
+    }
+    public void findSub(View view) {
+        EditText numberOne = findViewById(R.id.numOne);
+        EditText numberTwo = findViewById(R.id.numTwo);
+        TextView numberSum = findViewById(R.id.result);
+
+        int num1 = Integer.parseInt(numberOne.getText().toString());
+        int num2 = Integer.parseInt(numberTwo.getText().toString());
+        int sum = num1 - num2;
+
+        numberSum.setText("" + sum);
+    }
 
 }
