@@ -19,7 +19,7 @@ public class SecondActivity extends Activity {
         String nameToShow = intent.getStringExtra("USERNAME");
 
         // get a reference
-        TextView textView = findViewById(R.id.numTwo);
+        TextView textView = findViewById(R.id.result);
         textView.setText(nameToShow);
     }
 }

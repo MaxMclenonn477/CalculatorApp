@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         numberSum.setText("" + sum);
     }
-    public void findSub(View view) {
+    public void subtraction(View view) {
         EditText numberOne = findViewById(R.id.numOne);
         EditText numberTwo = findViewById(R.id.numTwo);
         TextView numberSum = findViewById(R.id.result);
@@ -56,4 +56,40 @@ public class MainActivity extends AppCompatActivity {
         numberSum.setText("" + sum);
     }
 
+    public void split(View view) {
+        EditText numberOne = findViewById(R.id.numOne);
+        EditText numberTwo = findViewById(R.id.numTwo);
+        TextView numberSum = findViewById(R.id.result);
+
+        int num1 = Integer.parseInt(numberOne.getText().toString());
+        int num2 = Integer.parseInt(numberTwo.getText().toString());
+        int sum = num1 / num2;
+
+        numberSum.setText("" + sum);
+    }
+
+    public void multi(View view) {
+        EditText numberOne = findViewById(R.id.numOne);
+        EditText numberTwo = findViewById(R.id.numTwo);
+        TextView numberSum = findViewById(R.id.result);
+
+        int num1 = Integer.parseInt(numberOne.getText().toString());
+        int num2 = Integer.parseInt(numberTwo.getText().toString());
+        int sum = num1 * num2;
+
+        numberSum.setText("" + sum);
+    }
+
+    public void sqaure(View view) {
+        EditText numberOne = findViewById(R.id.numOne);
+        EditText numberTwo = findViewById(R.id.numTwo);
+        TextView numberSum = findViewById(R.id.result);
+
+        int num1 = Integer.parseInt(numberOne.getText().toString());
+        int num2 = Integer.parseInt(numberTwo.getText().toString());
+        int sum1 = num1 * num1;
+        int sum2 = num2 * num2;
+
+        numberSum.setText("" + sum1 + "   " + sum2);
+    }
 }
