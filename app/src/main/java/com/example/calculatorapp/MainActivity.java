@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         //
         startActivity(intent);
     }
-
+    //
     public void findSum(View view){
         EditText numberOne = findViewById(R.id.numOne);
         EditText numberTwo = findViewById(R.id.numTwo);
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         numberSum.setText("" + sum);
     }
 
-    public void sqaure(View view) {
+    public void square(View view) {
         EditText numberOne = findViewById(R.id.numOne);
         EditText numberTwo = findViewById(R.id.numTwo);
         TextView numberSum = findViewById(R.id.result);
@@ -92,4 +92,6 @@ public class MainActivity extends AppCompatActivity {
 
         numberSum.setText("" + sum1 + "   " + sum2);
     }
+
+
 }
